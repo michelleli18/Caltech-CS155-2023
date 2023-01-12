@@ -227,7 +227,7 @@ Stochastic gradient descent (SGD) is an important optimization method in machine
     To verify the convergence of our gradient descent algorithm, consider the task of minimizing a function $f$ (assume that $f$ is continuously differentiable). Using Taylor's theorem, show that if $x'$ is a local minimum of $f$, then $\nabla f(x') = 0$. 
 \end{problem}
 \begin{hint}
-  First-order Taylor expansion gives that for some $x, h \in \mathbb{R}^n$, there exists $c \in (0, 1)$ such that $f(x + h) = f(x) + \nabla f(x + c\cdot h)^T h$.
+  First-order Taylor expansion gives that for any $x, h \in \mathbb{R}^n$, there exists $c \in (0, 1)$ such that $f(x + h) = f(x) + \nabla f(x + c\cdot h)^T h$.
   
 \end{hint}
 \begin{solution}
@@ -415,7 +415,7 @@ The following few problems ask you to work with the provided Jupyter notebook fo
 
   In 2D space, what is the minimum size of a dataset that is not linearly separable, such that no three points are collinear? How about the minimum size of a dataset in 3D that is not linearly separable, such that no four points are coplanar? Please limit your explanation to a few lines - you should justify but not prove your answer.
 
-  Finally, how does this generalize to N-dimension? More precisely, in N-dimensional space, what is the minimum size of a dataset that is not linearly separable, such that no $N$ points are on the same hyperplane? For the $N$-dimensional case, you may state your answer without proof or justification.
+  Finally, how does this generalize to N-dimension? More precisely, in N-dimensional space, what is the minimum size of a dataset that is not linearly separable, such that no $N+1$ points are on the same hyperplane? For the $N$-dimensional case, you may state your answer without proof or justification.
 \end{problem}
 \begin{solution}
 
